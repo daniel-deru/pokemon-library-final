@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">P<span id="pokeball"></span>kedex</h1>
+        <div id="controls">
+            <button id="previous" onclick="previous()"></button>
+            <button id="next" onclick="next()"></button>
+       </div>
+       <div id="scroll">
+            <button id="scroll-up"></button>
+            <button id="scroll-down"></button>
+        </div>
+        <div id="get-pokemon">
+           <img src="./pokeball.png" id="menu" alt="">
+        </div>
+    </header>
+
+    <div id="names-container">
+        <ol id="names"></ol>
+    </div>
+
+    <div id="main-info">
+
+        <div id="pokemon">
+            <h1 id="name"></h1>
+            <div id="img"></div>
+        </div>
+      
+        <div id="stats-container">
+           <ul id="stats">
+                <li>type: <span id="types"></span></li>
+                <li>special ability: <span id="ability"></span></li>
+                <li>attack: <span id="attack"></span></li>
+                <li>defence: <span id="defence"></span></li>
+                <li>speed: <span id="speed"></span></li>
+                <li>health: <span id="health"></span></li>
+                <li>height: <span id="height"></span></li>
+                <li>weight: <span id="weight"></span></li>
+           </ul>
+        </div>
+    </div>
+
+   
+
+    <div id="moves-container">
+        <h1>moves</h1>
+        <ul id="moves"></ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

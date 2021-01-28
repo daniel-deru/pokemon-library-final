@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+:root{
+    --red-clr: rgb(156, 31, 31);
+    --cream-clr: rgb(197, 199, 181)
+}
+body {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+    background: var(--red-clr);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: var(--cream-clr);
+    height: 100px;
+    position: fixed;
+    top: 0;
+}
+header h1 {
+    position: relative;
+    left: 40px; 
+}
+
+#title {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+#pokeball {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    background-image: url("./pokeball.png");
+}
+
+#controls {
+
+margin-left: 60px;
+}
+
+#previous {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 40px solid var(--red-clr);
+    border-bottom: 25px solid transparent;
+    border-left: none;
+    background-color: var(--cream-clr);
+    cursor: pointer;
+    outline: none;
+}
+
+#next {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 40px solid var(--red-clr);
+    border-bottom: 25px solid transparent;
+    border-right: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--cream-clr);
+}
+
+#scroll {
+    transform: rotateZ(90deg);
+}
+
+#scroll-up {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 40px solid var(--red-clr);
+    border-bottom: 25px solid transparent;
+    border-left: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+   
+}
+#scroll-down {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 40px solid var(--red-clr);
+    border-bottom: 25px solid transparent;
+    border-right: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+#get-pokemon img{
+    width: 70px;
+    height: 70px;
+    transform: rotateZ(30deg);
+    cursor: pointer;
+}
+
+#get-pokemon img:hover {
+    width: 80px;
+    height: 80px;
+   
+}
+#names-container{
+    display: block;
+    position: fixed;
+    right: -400px;
+    background-color: var(--cream-clr);
+    padding-left: 45px;
+    width: 300px;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    transition: 1s ease-out;
+}
+#names {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 0.5s 0.5s ease-out;
+}
+
+#names li{
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 2px solid var(--red-clr);
+}
+#names li:hover{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+#main-info {
+    padding: 80px 20px 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pokemon  {
+  text-align: center;
+  width: 700px;
+  padding: 1em 0px 10px 50px;
+}
+
+#pokemon #name {
+    width: 700px;
+}
+
+#stats-container {
+    width: 500px;
+}
+
+#stats{
+    font-size: 1.2em;
+}
+#stats li{
+    width: fit-content;
+    cursor: pointer;
+}
+#stats li:hover{
+    font-weight: bold;
+    font-size: 1.1em;
+    /* color: var(--cream-clr); */
+}
+#pokemon h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+
+#moves-container {
+    height: fit-content;
+    padding-top: 100px;
+}
+#moves-container h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#moves {
+ text-align: center;
+ padding: 10px;
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ grid-template-rows: 1fr;
+ grid-row-gap: 0.5em;
+ grid-column-gap: 0.5em;
+}
+
+#moves li {
+    cursor: pointer;
+    font-size: 0.8em;
+    border-radius: 20px;
+    background: var(--cream-clr);
+}
+#moves li:hover {
+ background: black;
+ color: var(--cream-clr);
+}
+
